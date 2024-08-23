@@ -43,19 +43,32 @@
                     </li>
                 </ul>
             </address>
+            <button class="burger-btn" type="button" data-menu-open>
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close" data-menu-close></button>
+                <nav class="mobile-menu-nav"></nav>
+                <address></address>
+            </div>
+        </div>
+        <script src="./js/menu.js"></script>
     </header>
     <!-- MAIN -->
     <main>
         <!-- SECTION 1 -->
-        <section class="section-one">
+        <section class="section-one hidden">
             <div class="container page-hero">
                 <h1 class="text-main">Effective Solutions for Your Business</h1>
                 <button type="button" class="button-main">Order Service</button>
             </div>
         </section>
         <!-- SECTION 2 -->
-        <section class="section-two">
+        <section class="section-two hidden">
             <div class="container page-about">
                 <h2 class="visually-hidden">About</h2>
                 <ul class="about-ul">
@@ -106,7 +119,7 @@
             </div>
         </section>
         <!-- SECTION 3 -->
-        <section class="section-three">
+        <section class="section-three hidden">
             <div class="container page-team">
                 <h2 class="text-team">Our Team</h2>
                 <ul class="ul-box-user">
@@ -262,7 +275,7 @@
             </div>
         </section>
         <!-- SECTION 4 -->
-        <section class="section-four">
+        <section class="section-four hidden">
             <div class="container page-employee">
                 <h2 class="text-portfolio">Our Portfolio</h2>
                 <ul class="ul-portfolio">
@@ -337,7 +350,7 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="container page-footer">
             <div class="footer-container">
                 <a href="./index.html" class="logotype logotype-footer">Web<span class="logo-footer">Studio</span></a>
@@ -390,7 +403,7 @@
         </div>
     </footer>
     <!-- MODAL -->
-    <div class="modal-overlay">
+    <div class="modal-overlay hidden">
         <div class="modal">
             <button type="button" class="modal-closed">
                 <svg width="8" height="8" class="icon-close">
