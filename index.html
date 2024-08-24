@@ -52,7 +52,11 @@
         <!-- MENU MOBILE -->
         <div class="mobile-menu" data-menu>
             <div class="container mobile-menu-container">
-                <button class="mobile-menu-close" data-menu-close></button>
+                <button class="mobile-menu-close" data-menu-close>
+                            <svg width="8" height="8" class="menu-icon-close">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                </button>
                 <nav class="mobile-menu-nav"></nav>
                 <ul class="mobile-page-nav">
                     <li>
@@ -119,12 +123,12 @@
             </div>
         </section>
         <!-- SECTION 2 -->
-        <section class="section-two hidden">
+        <section class="section-two">
             <div class="container page-about">
                 <h2 class="visually-hidden">About</h2>
                 <ul class="about-ul">
                     <li class="about-li">
-                        <div class="icon-sect-two">
+                        <div class="icon-sect-two hidden">
                                     <svg class="icon" width="64" height="64">
                                         <use href="./images/icons.svg#icon-antenna"></use>
                                     </svg>
@@ -135,7 +139,7 @@
                         </p>
                     </li>
                     <li class="about-li">
-                        <div class="icon-sect-two">
+                        <div class="icon-sect-two hidden">
                                   <svg class="icon" width="64" height="64">
                                     <use href="./images/icons.svg#icon-clock"></use>
                                   </svg>
@@ -146,7 +150,7 @@
                             time.</p>
                     </li>
                     <li class="about-li">
-                        <div class="icon-sect-two">
+                        <div class="icon-sect-two hidden">
                                    <svg class="icon" width="64" height="64">
                                      <use href="./images/icons.svg#icon-diagram"></use>
                                    </svg>
@@ -156,7 +160,7 @@
                             opportunities and minimize risk.</p>
                     </li>
                     <li class="about-li">
-                        <div class="icon-sect-two">
+                        <div class="icon-sect-two hidden">
                                     <svg class="icon" width="64" height="64">
                                         <use href="./images/icons.svg#icon-astronaut"></use>
                                     </svg>
@@ -170,12 +174,12 @@
             </div>
         </section>
         <!-- SECTION 3 -->
-        <section class="section-three hidden">
+        <section class="section-three">
             <div class="container page-team">
                 <h2 class="text-team">Our Team</h2>
                 <ul class="ul-box-user">
                     <li class="box-user">
-                        <img src="./images/mark.jpg" alt="Team Card 1" width="264" class="img-team"/>
+                        <img srcset="./images/mark.jpg" src="./images/mark.jpg" alt="Team Card 1" class="img-team"/>
                         <div class="text-card">
                           <h3 class="name-user">Mark Guerrero</h3>
                           <p class="about-user">Product Designer</p>
@@ -212,7 +216,7 @@
                           </div>
                     </li>
                     <li class="box-user">
-                        <img src="./images/tom.jpg" alt="Team Card 2" width="264" class="img-team"/>
+                        <img src="./images/tom.jpg" alt="Team Card 2" class="img-team"/>
                         <div class="text-card">
                           <h3 class="name-user">Tom Ford</h3>
                           <p class="about-user">Frontend Developer</p>
@@ -249,7 +253,7 @@
                         </div>
                     </li>
                     <li class="box-user">
-                        <img src="./images/camila.jpg" alt="Team Card 3" width="264" class="img-team"/>
+                        <img src="./images/camila.jpg" alt="Team Card 3" class="img-team"/>
                         <div class="text-card">
                           <h3 class="name-user">Camila Garcia</h3>
                           <p class="about-user">Marketing</p>
@@ -286,7 +290,8 @@
                         </div>
                     </li>
                     <li class="box-user">
-                        <img src="./images/daniel.jpg" alt="Team Card 4" width="264" class="img-team"/>
+                        <img src="./images/daniel.jpg" alt="Team Card 4" class="img-team"/>
+                        <!-- foto have width="264" -->
                         <div class="text-card">
                           <h3 class="name-user">Daniel Wilson</h3>
                           <p class="about-user">UI Designer</p>
@@ -326,7 +331,7 @@
             </div>
         </section>
         <!-- SECTION 4 -->
-        <section class="section-four hidden">
+        <section class="section-four">
             <div class="container page-employee">
                 <h2 class="text-portfolio">Our Portfolio</h2>
                 <ul class="ul-portfolio">
@@ -401,7 +406,7 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer hidden">
+    <footer class="footer">
         <div class="container page-footer">
             <div class="footer-container">
                 <a href="./index.html" class="logotype logotype-footer">Web<span class="logo-footer">Studio</span></a>
