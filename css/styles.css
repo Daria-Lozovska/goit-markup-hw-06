@@ -732,7 +732,6 @@ button {
     margin-bottom: 72px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
 }
 .ul-portfolio {
     display: flex;
@@ -1012,16 +1011,21 @@ button {
 @media screen and (min-width: 768px) {
     .footer {
         background-color: #2e2f42; 
-    
-         padding: 100px 0;
+        padding: 0;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
     .page-footer {
         max-width: 768px;
         padding: 0 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        align-items: baseline;
     }
     .footer-container {
         margin: 0;
-        margin-bottom: 72px;
         text-align: start;
     }
 
@@ -1035,19 +1039,16 @@ button {
     }
     .footer-socialmedia {
         width: 208px;
-        margin-bottom: 0;
-        margin-right: 24px;
-    }
-    .footer-subscribe {
-        margin-left: 80px;
-    }
-    .p-socialmedia {
-        text-align: start;
-    }
-    .telegram-p {
-        text-align: start;
+        margin: 0;
+        display: flex;
+        align-items: start;
     }
 
+    .footer-subscribe {
+        margin: 0;
+        display: flex;
+        align-items: start;;
+    }
 
     .footer-form {
         display: flex;
@@ -1068,7 +1069,7 @@ button {
 @media screen and (min-width: 1158px) {
     .footer {
          min-width: 1440px;
-         padding: 100px 0;
+        padding: 100px 0;
  }
  
  .page-footer {
@@ -1076,10 +1077,9 @@ button {
          flex-direction: row;
          max-width: 1158px;
          align-items: baseline;
- }
- 
- .footer-container {
-         margin-right: 120px
+        flex-wrap: nowrap;
+        align-items: baseline;
+        gap: 0;
  }
  
  .text-footer {
@@ -1099,6 +1099,7 @@ button {
          display: flex;
          flex-direction: column;
          margin: 0;
+         margin-left: 120px;
          padding: 0;
  }
  
