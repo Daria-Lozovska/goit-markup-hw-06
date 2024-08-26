@@ -482,6 +482,7 @@ button {
         min-width: 1158px;
     }
     .section-one {
+        min-width: 1158px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
@@ -1077,7 +1078,7 @@ button {
 
 @media screen and (min-width: 1158px) {
     .footer {
-        min-width: 1440px;
+         min-width: 1440px;
         padding: 100px 0;
  }
  
