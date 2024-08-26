@@ -394,6 +394,16 @@ button {
 
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .section-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/people-office-2x.jpg);
+    }
+}
+
 .text-main {
     font-weight: 700;
     font-size: 36px;
@@ -472,7 +482,6 @@ button {
         min-width: 1158px;
     }
     .section-one {
-        min-width: 1158px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
@@ -725,13 +734,13 @@ button {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #2E2F42;
 
     text-transform: capitalize;
     margin-bottom: 72px;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    white-space: nowrap;
 }
 .ul-portfolio {
     display: flex;
@@ -1068,7 +1077,7 @@ button {
 
 @media screen and (min-width: 1158px) {
     .footer {
-         min-width: 1440px;
+        min-width: 1440px;
         padding: 100px 0;
  }
  
